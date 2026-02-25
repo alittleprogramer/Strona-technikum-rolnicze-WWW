@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa dojazdu – ZSCKR Swornegacie</title>
+    <link rel="stylesheet" href="stylesheet.css">
+	<link rel="icon" type="image/x-icon" href="pics/favicon.png">
+	<script src="script.js" defer></script>
+
+</head>
+<body>
+
+		<header>
+		  <div class="hcontainer">
+			<img class="hbox col-25" src="pics/mrirw_logo.png" height="200" alt="Logo MRiRW">
+
+			<div class="hbox col-40">
+			  <p>Zespół Szkół Centrum Kształcenia Rolniczego</p>
+			  <p>im. Szczepana Pieniążka w Swornegaciach</p>
+			  <a href="index.html">
+				<img src="pics/szkoly_logo.png" width="220" alt="Logo szkoły">
+			  </a>
+			</div>
+
+			<img class="hbox col-25" src="pics/ssr_logo.png" height="200" alt="Logo SSR">
+		  </div>
+
+		  <nav>
+			<ul>
+			  <li class="dropdown">
+				<a>O szkole ▼</a>
+				<ul class="dropdown-menu">
+				  <li><a href="historia.html">Historia szkoły</a></li>
+				  <li><a href="dyrekcja.html">Dyrekcja i nauczyciele</a></li>
+				  <li><a href="inf.html">Informacje</a></li>
+				</ul>
+			  </li>
+
+			  <li class="dropdown">
+				<a>Kierunki ▼</a>
+				<ul class="dropdown-menu">
+				  <li><a href="kierunki.html">Opis kierunków technikum i zawodów</a></li>
+				</ul>
+			  </li>
+
+			  <li class="dropdown">
+				<a>Dla ucznia ▼</a>
+				<ul class="dropdown-menu">
+				  <li><a href="plan.html">Plan lekcji</a></li>
+				  <li><a href="https://uonetplus.vulcan.net.pl/minrol">Dziennik elektroniczny</a></li>
+				  <li><a href="ogloszenia.html">Ogłoszenia i komunikaty</a></li>
+				</ul>
+			  </li>
+
+			  <li class="dropdown">
+				<a>Dla rodzica ▼</a>
+				<ul class="dropdown-menu">
+				  <li><a href="wywiadowki.html">Spotkania z rodzicami</a></li>
+				  <li><a href="do_pobr.html">Dokumenty do pobrania</a></li>
+				  <li><a href="https://uonetplus.vulcan.net.pl/minrol">Dziennik elektroniczny</a></li>
+				</ul>
+			  </li>
+
+			  <li class="dropdown">
+				<a href="galeria.html">Galeria</a>
+			  </li>
+
+			  <li class="dropdown">
+				<a>Kontakt ▼</a>
+				<ul class="dropdown-menu">
+				  <li><a href="teleadresowe.html">Dane teleadresowe</a></li>
+				  <li><a href="formularz.html">Formularz kontaktowy</a></li>
+				  <li><a href="mapa.html">Mapa dojazdu</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </nav>
+	</header>
+
+
+	
+		 <main>
+        <section class="page-section">
+            <h1>Mapa dojazdu</h1>
+
+            <p>
+                Szkoła znajduje się w miejscowości Swornegacie, przy ulicy Szkolnej 1.
+                Dojazd możliwy jest zarówno komunikacją publiczną, jak i własnym środkiem transportu.
+            </p>
+
+            <div class="map-container">
+                
+                <iframe
+				  src="https://www.google.com/maps?q=53.85474130582804,17.5029257167853&z=15&output=embed"
+				  width="600"
+				  height="450"
+				  style="border:0;"
+				  allowfullscreen
+				  loading="lazy"
+				  referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+
+            </div>
+
+            <article class="program-card">
+                <h2>Dojazd</h2>
+                <ul>
+                    <li><strong>Samochodem:</strong> dojazd drogą krajową 236, bezpośrednio do centrum miejscowości.</li>
+                    <li><strong>Autobusem:</strong> najbliższy przystanek – „Swornegacie Szkoła”.</li>
+                    <li><strong>Parking:</strong> miejsca parkingowe przy budynku szkoły oraz wzdłuż ulicy Szkolnej.</li>
+                </ul>
+            </article>
+			
+			<article class="program-card">
+			  <h2>Twoja lokalizacja</h2>
+			  <p>Kliknij, żeby pokazać współrzędne (przeglądarka zapyta o zgodę).</p>
+
+			  <button type="button" class="location-btn" onclick="getLocation()">Pokaż moją lokalizację</button>
+			  <p id="location"></p>
+			  <p id="distance"></p>
+			</article>
+
+
+        </section>
+    </main>
+		
+	<footer class="site-footer">
+    <div class="footer-inner">
+        
+        <div class="footer-column">
+            <h2>Kontakt</h2>
+
+            <ul class="footer-contact-list">
+                <li>
+                    <span class="footer-icon">🏫</span>
+                    <div>
+                        <strong>Zespół Szkół Centrum Kształcenia Rolniczego</strong><br>
+                        im. Szczepana Pieniążka w Swornegaciach<br>
+                        ul. Szkolna 1<br>
+                        89-608 Swornegacie
+                    </div>
+                </li>
+
+                <li>
+                    <span class="footer-icon">✉️</span>
+                    <div>
+                        <a href="mailto:sekretariat@zsckrswornegacie.pl">
+                            sekretariat@zsckrswornegacie.pl
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <span class="footer-icon">📞</span>
+                    <div>
+                        tel. 52 000 00 00
+                    </div>
+                </li>
+
+                <li>
+                    <span class="footer-icon">📠</span>
+                    <div>
+                        fax 52 000 00 01
+                    </div>
+                </li>
+
+                <li>
+                    <span class="footer-icon">🌐</span>
+                    <div>
+                        <a href="https://www.zsckrswornegacie.pl">
+                            www.zsckrswornegacie.pl
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+      
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Zespół Szkół CKR im. Szczepana Pieniążka w Swornegaciach. Wszystkie prawa zastrzeżone.</p>
+		<p>Autorzy strony: Maja Panasiewicz, Aleksandra Olszyńska</p>
+    </div>
+</footer>
+
+		<script>
+		  // Współrzędne szkoły 
+		  const SCHOOL_LAT = 53.85474130582804;
+		  const SCHOOL_LON = 17.5029257167853;
+
+		  function getLocation() {
+			const output = document.getElementById("location");
+
+			if (!navigator.geolocation) {
+			  output.innerText = "Geolokalizacja nie jest wspierana przez przeglądarkę.";
+			  return;
+			}
+
+			output.innerText = "Pobieram lokalizację...";
+
+			navigator.geolocation.getCurrentPosition(
+			  showPosition,
+			  showError,
+			  { enableHighAccuracy: true }
+			);
+		  }
+
+		  function showPosition(position) {
+			const userLat = position.coords.latitude;
+			const userLon = position.coords.longitude;
+
+			document.getElementById("location").innerHTML =
+				  `<div class="geo-info">
+					 <strong>Twoja lokalizacja:</strong><br>
+					 Szerokość geograficzna: ${userLat.toFixed(5)}<br>
+					 Długość geograficzna: ${userLon.toFixed(5)}
+				   </div>`;
+
+
+			const distance = calculateDistance(
+			  userLat,
+			  userLon,
+			  SCHOOL_LAT,
+			  SCHOOL_LON
+			);
+
+			document.getElementById("distance").innerHTML =
+				  `<div class="geo-info">
+					 <strong>Odległość od Twojej lokalizacji do szkoły:</strong> ${distance.toFixed(2)} km
+				   </div>`;
+		  }
+
+		  // liczy dystans po kuli ziemskiej
+		  function calculateDistance(lat1, lon1, lat2, lon2) {
+			const R = 6371; 
+			const dLat = toRad(lat2 - lat1);
+			const dLon = toRad(lon2 - lon1);
+
+			const a =
+			  Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+			  Math.cos(toRad(lat1)) *
+				Math.cos(toRad(lat2)) *
+				Math.sin(dLon / 2) *
+				Math.sin(dLon / 2);
+
+			const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+			return R * c;
+		  }
+
+		  function toRad(value) {
+			return (value * Math.PI) / 180;
+		  }
+
+		  function showError(error) {
+			alert("Nie udało się pobrać lokalizacji.");
+		  }
+		</script>
+
+
+		
+    </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz kontaktowy – ZSCKR Swornegacie</title>
+    <link rel="stylesheet" href="stylesheet.css">
+	<link rel="icon" type="image/x-icon" href="pics/favicon.png">
+	<script src="script.js" defer></script>
+
+</head>
+<body>
+
+	<header>
+        <div class="hcontainer">
+			  <img class="hbox col-25" src="pics/mrirw_logo.png" height="200" alt="Logo MRiRW">
+				  <div class="hbox col-40">
+					<p>Zespół Szkół Centrum Kształcenia Rolniczego</p>
+					<p>im. Szczepana Pieniążka w Swornegaciach</p>
+						<a href="index.html">
+						  <img src="pics/szkoly_logo.png" width="220" alt="Logo szkoły">
+						</a>
+				  </div>
+			  <img class="hbox col-25" src="pics/ssr_logo.png" height="200" alt="Logo SSR">
+		</div>
+		
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a>O szkole ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="historia.html">Historia szkoły</a></li>
+                        <li><a href="dyrekcja.html">Dyrekcja i nauczyciele</a></li>
+                        <li><a href="inf.html">Informacje</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a>Kierunki ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="kierunki.html">Opis kierunków technikum i zawodów</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a>Dla ucznia ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="plan.html">Plan lekcji</a></li>
+                        <li><a href="https://uonetplus.vulcan.net.pl/minrol">Dziennik elektroniczny</a></li>
+                        <li><a href="ogloszenia.html">Ogłoszenia i komunikaty</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a>Dla rodzica ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="wywiadowki.html">Spotkania z rodzicami</a></li>
+                        <li><a href="do_pobr.html">Dokumenty do pobrania</a></li>
+                        <li><a href="https://uonetplus.vulcan.net.pl/minrol">Dziennik elektroniczny</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="galeria.html">Galeria</a>
+                  
+                </li>
+
+                <li class="dropdown">
+                    <a>Kontakt ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="teleadresowe.html">Dane teleadresowe</a></li>
+                        <li><a href="formularz.html">Formularz kontaktowy</a></li>
+                        <li><a href="mapa.html">Mapa dojazdu</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+	</header>
+	
+		<main>
+        <section class="page-section">
+            <h1>Formularz kontaktowy</h1>
+
+            <p>
+                Masz pytanie dotyczące rekrutacji, oferty edukacyjnej, internatu lub innej sprawy?
+                Skorzystaj z formularza kontaktowego. Odpowiemy najszybciej jak to możliwe.
+            </p>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <label for="imie">Imię i nazwisko</label>
+                    <input type="text" id="imie" name="imie" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Adres e-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="temat">Temat wiadomości</label>
+                    <input type="text" id="temat" name="temat" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="kategoria">Kategoria sprawy</label>
+                    <select id="kategoria" name="kategoria">
+                        <option value="rekrutacja">Rekrutacja</option>
+                        <option value="uczniowie">Sprawy uczniów</option>
+                        <option value="rodzice">Sprawy rodziców</option>
+                        <option value="internat">Internat</option>
+                        <option value="inne">Inne</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="wiadomosc">Treść wiadomości</label>
+                    <textarea id="wiadomosc" name="wiadomosc" rows="6" required></textarea>
+                </div>
+
+                <div class="form-row form-row-inline">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="rodo" required>
+                        Zapoznałem/Zapoznałam się z informacją o przetwarzaniu danych osobowych (RODO).
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Wyślij wiadomość</button>
+                </div>
+            </form>
+
+            <p class="form-note">
+                
+            </p>
+        </section>
+    </main>
+		
+	<footer class="site-footer">
+    <div class="footer-inner">
+        
+        <div class="footer-column">
+            <h2>Kontakt</h2>
+
+            <ul class="footer-contact-list">
+                <li>
+                    <span class="footer-icon">🏫</span>
+                    <div>
+                        <strong>Zespół Szkół Centrum Kształcenia Rolniczego</strong><br>
+                        im. Szczepana Pieniążka w Swornegaciach<br>
+                        ul. Szkolna 1<br>
+                        89-608 Swornegacie
+                    </div>
+                </li>
+
+                <li>
+                    <span class="footer-icon">✉️</span>
+                    <div>
+                        <a href="mailto:sekretariat@zsckrswornegacie.pl">
+                            sekretariat@zsckrswornegacie.pl
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <span class="footer-icon">📞</span>
+                    <div>
+                        tel. 52 000 00 00
+                    </div>
+                </li>
+
+                <li>
+                    <span class="footer-icon">📠</span>
+                    <div>
+                        fax 52 000 00 01
+                    </div>
+                </li>
+
+                <li>
+                    <span class="footer-icon">🌐</span>
+                    <div>
+                        <a href="https://www.zsckrswornegacie.pl">
+                            www.zsckrswornegacie.pl
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+      
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Zespół Szkół CKR im. Szczepana Pieniążka w Swornegaciach. Wszystkie prawa zastrzeżone.</p>
+		<p>Autorzy strony: Maja Panasiewicz, Aleksandra Olszyńska</p>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+
+		const form = document.forms[0];   
+		const note = document.querySelector(".form-note");
+
+		if (!form || !note) return;
+
+		form.addEventListener("submit", function (e) {
+			e.preventDefault();
+
+			note.textContent = "Wysłano!";
+			form.reset();
+		});
+
+	});
+	</script>
+		
+    </body>
+</html>
